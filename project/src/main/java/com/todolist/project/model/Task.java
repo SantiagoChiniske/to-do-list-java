@@ -15,13 +15,13 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
 
-    @Column
+    @Column(nullable = false)
     String titulo;
 
-    @Column
+    @Column(nullable = false)
     String descricao;
 
-    @Column
+    @Column(nullable = false)
     String responsavel;
 
 }
